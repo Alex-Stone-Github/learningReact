@@ -1,0 +1,13 @@
+Here is how to process events in sdl2 in a simple game loop
+
+
+while (1) {
+    SDL_Event event;
+    while (SDL_PollEvent(&event)) {
+        if (event.type == SDL_QUIT) {
+            // you should probably quit here than
+        }
+        // rest of logic goes here
+    }
+}
+
